@@ -11,7 +11,7 @@ export const Signup = () => {
   };
 
   return (
-     <Box
+    <Box
       sx={{
         display: "flex",
         justifyContent: "center",
@@ -21,18 +21,29 @@ export const Signup = () => {
         backgroundColor: "#f9f9f9", // optional, looks cleaner
       }}
     >
-    <Paper sx={{ p: 4, maxWidth: 400, mx: "auto", mt: 5 }}>
-      <Typography variant="h5" gutterBottom>Signup</Typography>
-      <TextField
-        fullWidth margin="normal" label="Username"
-        value={username} onChange={(e) => setUsername(e.target.value)}
-      />
-      <TextField
-        fullWidth margin="normal" type="password" label="Password"
-        value={password} onChange={(e) => setPassword(e.target.value)}
-      />
-      <Button fullWidth variant="contained" onClick={handleSignup}>Signup</Button>
-    </Paper>
+      <Paper sx={{ p: 4, maxWidth: 400, mx: "auto", mt: 5 }}>
+        <Typography variant="h5" gutterBottom>
+          Signup
+        </Typography>
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          type="password"
+          label="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <Button fullWidth variant="contained" onClick={handleSignup}>
+          Signup
+        </Button>
+      </Paper>
     </Box>
   );
 };

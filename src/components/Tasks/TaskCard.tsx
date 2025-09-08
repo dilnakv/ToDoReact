@@ -20,12 +20,7 @@ export const TaskCard = ({ task, onEdit, onDelete }: Props) => {
         }}
       >
         <Box>
-          <Typography
-            variant="h6"
-            // sx={{ textDecoration: task.completed ? "line-through" : "none" }}
-          >
-            {task.title}
-          </Typography>
+          <Typography variant="h6">{task.title}</Typography>
           <Typography variant="body2">{task.description}</Typography>
         </Box>
         <Box>
